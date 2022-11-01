@@ -26,7 +26,11 @@ public class Item
     {
     }
 
-    public Item(ItemDto itemDto) {
+    public Item( ItemDto itemDto )
+    {
+        this.name = itemDto.getName();
+        this.description = itemDto.getDescription();
+        this.imageUrl = itemDto.getImageUrl();
     }
 
     public Integer getId()
